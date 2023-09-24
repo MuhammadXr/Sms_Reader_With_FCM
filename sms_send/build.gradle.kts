@@ -5,6 +5,15 @@ plugins {
 }
 
 android {
+
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:\\Memory\\DC\\dasturlarim\\shx\\ky\\kyforXRnew.jks")
+            storePassword = "MukhammadXR21"
+            keyAlias = "key0"
+            keyPassword = "MukhammadXR21"
+        }
+    }
     namespace = "com.rast.smsreader"
     compileSdk = 33
 
@@ -23,6 +32,14 @@ android {
 
     buildTypes {
         release {
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            signingConfig = signingConfigs.getByName("release")
+        }
+        debug {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),

@@ -48,9 +48,9 @@ class SmsForegroundService: LifecycleService() {
     var iconNotification: Bitmap? = null
     val notificationList: MutableList<Notification> = emptyList<Notification>().toMutableList()
     var notificationManager: NotificationManager? = null
-    var notificationChannelId = "auto_refresh_page"
+    var notificationChannelId = "sms_listen"
     val notificationChannel = NotificationChannel(
-        notificationChannelId, "Auto Refresh Page",
+        notificationChannelId, "Sms listen",
         NotificationManager.IMPORTANCE_MIN
     )
     private fun createNotifyForeground(context: Context){
@@ -64,7 +64,7 @@ class SmsForegroundService: LifecycleService() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 assert(notificationManager != null)
                 notificationManager?.createNotificationChannelGroup(
-                    NotificationChannelGroup("auto_refresh", "refresh")
+                    NotificationChannelGroup("sms_listen", "Smslar")
                 )
                 notificationChannel.enableLights(false)
                 notificationChannel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
@@ -77,7 +77,7 @@ class SmsForegroundService: LifecycleService() {
 
     private fun initNotification(
         context: Context,
-        pageTitle: String = "Auto Refresh is Working",
+        pageTitle: String = "Sms jo'natuvchi ishlayapti",
     ): Notification {
         context.apply {
             val intent = Intent(this, MainActivity::class.java)
