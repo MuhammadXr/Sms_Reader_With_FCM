@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "195390554688",
+    "project_id": "sms-reader-6dbc7",
+    "storage_bucket": "sms-reader-6dbc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195390554688:android:34b4328caaf9ea91d715a5",
+        "android_client_info": {
+          "package_name": "com.rast.sms_reader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPsZvVGaZLRQd5IJ9H-TFFlI25_GsReW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195390554688:android:b9e8d511b36ae8cbd715a5",
+        "android_client_info": {
+          "package_name": "com.rast.smsreader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPsZvVGaZLRQd5IJ9H-TFFlI25_GsReW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
