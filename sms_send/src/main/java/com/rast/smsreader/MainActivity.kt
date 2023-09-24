@@ -51,7 +51,9 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.Center,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        Row {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
                             Text(text = "Batereya Settings, 1-sini tanla")
                             IconButton(onClick = {
                                 PermissionHandler.openBatteryOptimizationIgnoringSettings(
@@ -65,7 +67,9 @@ class MainActivity : ComponentActivity() {
                             }
                         }
                         Box(modifier = Modifier.size(24.dp))
-                        Row {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
                             Text(text = "Auto Startni yoqib qo'y")
                             IconButton(onClick = {
                                 PermissionHandler.openSettingsApplication(
