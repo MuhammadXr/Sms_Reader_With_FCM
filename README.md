@@ -7,8 +7,8 @@ second is receiver app.
 
 
 ## Demo
-![]([Sms_Reader/sender.gif](https://github.com/MuhammadXr/Sms_Reader/blob/master/sender.gif))
-[receiver.gif]
+Sender![](https://github.com/MuhammadXr/Sms_Reader/blob/master/sender.gif)
+Receiving FCM ![](https://github.com/MuhammadXr/Sms_Reader/blob/master/receiver.gif)
 ## Appendix
 
 1. First app will choose avaible sim card in android device. It will take sms and will send through FireBaseCloudMessaging (FCM) to subscribed devices.
