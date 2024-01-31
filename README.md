@@ -7,8 +7,8 @@ second is receiver app.
 
 
 ## Demo
-![alt text][sender.gif]
-![alt text][receiver.gif]
+[sender.gif]
+[receiver.gif]
 ## Appendix
 
 1. First app will choose avaible sim card in android device. It will take sms and will send through FireBaseCloudMessaging (FCM) to subscribed devices.
