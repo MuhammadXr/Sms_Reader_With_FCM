@@ -7,7 +7,7 @@ second is receiver app.
 
 
 ## Demo
-(Sms_Reader/sender.gif)
+![](Sms_Reader/sender.gif)
 [receiver.gif]
 ## Appendix
 
